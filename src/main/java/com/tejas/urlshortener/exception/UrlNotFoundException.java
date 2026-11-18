@@ -1,0 +1,7 @@
+package com.tejas.urlshortener.exception;
+
+public class UrlNotFoundException extends RuntimeException {
+    public UrlNotFoundException(String code) {
+        super("No URL found for short code: " + code);
+    }
+}
